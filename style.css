@@ -1,0 +1,111 @@
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100%;
+    font-family: inter;
+    background-color: var(--off-black);
+    color: var(--white);
+}
+
+main {
+    
+    background-color: var(--dark-grey);
+    max-width: 23.43rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 0.5rem;
+}
+
+.profile-info {
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column; 
+align-items: center;
+align-content: center;
+}
+
+.autor-avatar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+  
+.autor-avatar img {
+    border-radius: 50%;
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+
+p.autor-location {
+    color: var(--green);
+    font-size: 0.7rem;
+    margin-top: 0;
+}
+
+p.slogan {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.profile-social-links {
+    width: 100%;
+    margin: 1rem;
+    display: inline-block;
+}
+
+a.profile-github, a.profile-frontendmentor, a.profile-linkedin, a.profile-twitter, a.profile-instagram {
+    display: inline-block;
+    width: 90%;
+    border-radius: 0.5rem;
+    background-color: var(--grey);
+    text-align: center;
+    margin: 3%;
+    padding: 3%;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.profile-github:hover, a.profile-github:hover {
+    cursor: pointer; 
+    background-color: var(--green);
+    transition: all .1s ease-in-out;
+    color: var(--off-black);
+    font-weight: 600;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 90rem) {
+    main {
+         margin: 0 auto; 
+         max-width: 100%
+    }
+}
